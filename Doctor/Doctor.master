@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Doctor.master.cs" Inherits="Doctor_Doctor" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Menu ID="Menu1" runat="server" BackColor="#FF9933" Font-Bold="True" Font-Names="Century" ForeColor="#0066FF" Orientation="Horizontal" RenderingMode="Table" Width="100%">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Doctor/DoctorHome.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Manage Profile" Value="Manage Profile" NavigateUrl="~/Doctor/ManageProfile.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="My Appointment" Value="My Appointment" NavigateUrl="~/Doctor/MyAppointment.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Enquiry" Value="Enquiry" NavigateUrl="~/Doctor/Enquiry.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Logout" Value="Logout"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

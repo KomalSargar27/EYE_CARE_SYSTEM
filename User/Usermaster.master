@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Usermaster.master.cs" Inherits="User_Usermaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+	<script type="text/javascript" src="../engine1/jquery.js"></script>
+	
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+
+        .auto-style1 {
+            width: 100%;
+            border: 1px solid #000000;
+        }
+        .auto-style6 {            background-color: #0066FF;
+            height: 26px;
+        }
+        .auto-style5 {
+            font-size: large;
+            background-color: #FFFFFF;
+        }
+        .auto-style8 {
+            color: #FFFFFF;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <table align="center" cellpadding="0" cellspacing="0" class="auto-style1" border="0" style="border: thin solid #808080; font-family: 'Century Gothic';">
+            <tr>
+                <td class="">
+                    <table align="center" cellpadding="6" cellspacing="1" class="" width="100%" style="background-color: #0066FF">
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <asp:Image ID="Image3" runat="server" Height="20px" ImageUrl="~/images/icons8-call-50.png" Width="20px" />
+                            </td>
+                            <td class="auto-style8">9822970880</td>
+                            <td>
+                                <asp:Image ID="Image4" runat="server" Height="20px" ImageUrl="~/images/icons8-time-50.png" Width="20px" />
+                            </td>
+                            <td class="auto-style8">Monday to Saturday : 9.00AM to 7.00 PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <asp:Image ID="Image5" runat="server" Height="20px" ImageUrl="~/images/icons8-user-24.png" Width="20px" />
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" style="text-decoration:none;" ForeColor="White" NavigateUrl="~/User/PatientLogin.aspx">Patient Portal</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <table align="center" cellpadding="3" cellspacing="0" class="" width="100%" style="border-bottom-style: solid; border-width: thin; border-color: #808080">
+                        <tr>
+                            <td>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Image ID="Image1" runat="server" Height="90px" ImageUrl="~/images/logo3.png" Width="220px" />
+                            </td>
+                            <td><strong>
+                    <asp:Menu ID="Menu" runat="server" CssClass="auto-style5"  Height="40px" Orientation="Horizontal" RenderingMode="Table" Width="100%" ForeColor="Black" >
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/User/Home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="About us" Value="About us" NavigateUrl="~/User/About Us.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Services" Value="Services" NavigateUrl="~/User/Services.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Our Team" Value="Our Team" NavigateUrl="~/User/OurTeam.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Feedback" Value="Feedback" NavigateUrl="~/User/Feedback.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact" Value="Enquiry" NavigateUrl="~/User/Enquiry.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                    </strong></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                            <td>
+                                <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl="~/images/header-btn.png" PostBackUrl="~/User/OurProducts.aspx" Width="150px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder></td>
+            </tr>
+            <tr>
+                <td> &nbsp;<strong><Marquee scrollamount="10" width="100%" behavior="alternate" style="color:#FFFFFF;  " class="auto-style6"> <asp:Button ID="Button1" runat="server" Text="Button" BorderStyle="None" AccessKey="a" PostBackUrl="~/Admin/Adminlogin.aspx" BackColor="#0066FF" ForeColor="#0066FF"></asp:Button>Project By: Komal And Asmita</Marquee></strong></td>
+            </tr>
+        </table>
+
+    </div>
+    </form>
+</body>
+</html>
